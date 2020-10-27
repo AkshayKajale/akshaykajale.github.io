@@ -345,16 +345,16 @@ ul{
 }
 
 .row {
-    display: flex;
+    display: grid;
     justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom:50px;
   }
-  
-  .column {
-    flex: 50%;
-    padding: 10px;
-    justify-content: space-evenly;
-  }
+.column{
+    display: grid;
 
+  }
 
 @media screen and (max-width:800px){
     .intro-wrapper{
